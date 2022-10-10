@@ -56,7 +56,7 @@ class ModelCar(Model):
         verbose_name_plural = 'Модели'
 
 
-class OrderCar(Model):
+class Order(Model):
     color = ForeignKey(
         to='ColorCar',
         on_delete=CASCADE,
