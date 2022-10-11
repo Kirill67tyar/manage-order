@@ -18,17 +18,24 @@ from django.db.models import Manager, Sum
 
 class OrderManager(Manager):
     def order_by_quantity(self):
-        return self.order_by('quantity')
+        return self.get_queryset().order_by('quantity')
 
     def filter_by_mark(self, mark):
-        return self.filter(model__mark=mark)  # .select_related('model__mark')
+        return self.get_queryset().filter(model__mark__name=mark)  # .select_related('model__mark')
 
 
 class ColorManager(Manager):
-    def filter_with_quantity(self, **kwargs):
-        return self.filter(**kwargs).annotate(quantity=Sum('orders__quantity'))
+    def get_queryset(self):
+        query = super().get_queryset().annotate(quantity=Sum('orders__quantity'))
+        return query
 
 
 class MarkManager(Manager):
-    def filter_with_quantity(self, **kwargs):
-        return self.filter(**kwargs).annotate(quantity=Sum('orders__quantity'))
+    def get_queryset(self):
+        query = super().get_queryset().annotate(quantity=Sum('orders__quantity'))
+        return query
+
+
+class ModelCarManager(Manager):
+    def get_queryset(self):
+        return super().get_queryset().select_related('mark')

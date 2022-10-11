@@ -5,7 +5,8 @@ from django.db.models import (
 )
 
 from orders.managers import (
-    OrderManager, ColorManager, MarkManager,
+    OrderManager, ColorManager,
+    MarkManager, ModelCarManager
 )
 
 
@@ -14,13 +15,17 @@ class ColorCar(Model):
         max_length=50,
         null=False,
         blank=False,
+        unique=True,
         verbose_name='Цвет'
     )
-    objects = ColorManager()
+    # objects = ColorManager()
 
     class Meta:
         verbose_name = 'Цвет'
         verbose_name_plural = 'Цвета'
+
+    def __str__(self):
+        return f'{self.name}'
 
 
 class MarkCar(Model):
@@ -28,32 +33,41 @@ class MarkCar(Model):
         max_length=50,
         null=False,
         blank=False,
+        unique=True,
         verbose_name='Марка'
     )
-    objects = MarkManager()
+    # objects = MarkManager()
 
     class Meta:
         verbose_name = 'Марка'
         verbose_name_plural = 'Марки'
+
+    def __str__(self):
+        return f'{self.name}'
 
 
 class ModelCar(Model):
     mark = ForeignKey(
         to='MarkCar',
         on_delete=CASCADE,
-        related_name='marks',
+        related_name='models',
         verbose_name='id марки'
     )
     name = CharField(
         max_length=50,
         null=False,
         blank=False,
+        unique=True,
         verbose_name='Модель'
     )
+    # objects = ModelCarManager()
 
     class Meta:
         verbose_name = 'Модель'
         verbose_name_plural = 'Модели'
+
+    def __str__(self):
+        return f'{self.mark.name} {self.name}'
 
 
 class Order(Model):
@@ -78,9 +92,14 @@ class Order(Model):
         auto_now_add=True,
         verbose_name='Время создания заказа'
     )
-    objects = OrderManager()
+    # objects = OrderManager()
 
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
 
+    # def __str__(self):
+    #     return f'{self.model.mark.name} {self.model.name} ({self.color.name}) - {self.quantity} шт.'
+
+    def __str__(self):
+        return f'Заказ № {self.pk}'

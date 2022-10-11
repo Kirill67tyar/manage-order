@@ -1,0 +1,408 @@
+[
+{
+  "model": "orders.colorcar",
+  "pk": 1,
+  "fields": {
+    "name": "баклажан"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 8,
+  "fields": {
+    "name": "зеленый"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 9,
+  "fields": {
+    "name": "синий"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 10,
+  "fields": {
+    "name": "черный"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 12,
+  "fields": {
+    "name": "серебристый"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 13,
+  "fields": {
+    "name": "красный"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 14,
+  "fields": {
+    "name": "желтый"
+  }
+},
+{
+  "model": "orders.colorcar",
+  "pk": 15,
+  "fields": {
+    "name": "белый"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 1,
+  "fields": {
+    "name": "Lada"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 2,
+  "fields": {
+    "name": "Toyota"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 3,
+  "fields": {
+    "name": "Peugeot"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 4,
+  "fields": {
+    "name": "Ford"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 5,
+  "fields": {
+    "name": "Mazda"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 6,
+  "fields": {
+    "name": "Nissan"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 7,
+  "fields": {
+    "name": "BMW"
+  }
+},
+{
+  "model": "orders.markcar",
+  "pk": 8,
+  "fields": {
+    "name": "Audi"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 1,
+  "fields": {
+    "mark": 1,
+    "name": "Kalina"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 2,
+  "fields": {
+    "mark": 2,
+    "name": "Prius"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 3,
+  "fields": {
+    "mark": 3,
+    "name": "307"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 4,
+  "fields": {
+    "mark": 4,
+    "name": "Fiesta"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 5,
+  "fields": {
+    "mark": 4,
+    "name": "Mondeo"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 6,
+  "fields": {
+    "mark": 5,
+    "name": "Demio"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 7,
+  "fields": {
+    "mark": 2,
+    "name": "Land Cruiser"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 8,
+  "fields": {
+    "mark": 4,
+    "name": "Focus"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 9,
+  "fields": {
+    "mark": 6,
+    "name": "Juke"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 10,
+  "fields": {
+    "mark": 7,
+    "name": "X5"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 11,
+  "fields": {
+    "mark": 8,
+    "name": "TT"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 12,
+  "fields": {
+    "mark": 4,
+    "name": "Kuga"
+  }
+},
+{
+  "model": "orders.modelcar",
+  "pk": 13,
+  "fields": {
+    "mark": 6,
+    "name": "Patrol"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "color": 1,
+    "model": 1,
+    "quantity": 3,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "color": 9,
+    "model": 2,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "color": 15,
+    "model": 3,
+    "quantity": 2,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "color": 8,
+    "model": 7,
+    "quantity": 4,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 5,
+  "fields": {
+    "color": 15,
+    "model": 13,
+    "quantity": 6,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 6,
+  "fields": {
+    "color": 13,
+    "model": 6,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 7,
+  "fields": {
+    "color": 12,
+    "model": 7,
+    "quantity": 4,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 8,
+  "fields": {
+    "color": 10,
+    "model": 11,
+    "quantity": 2,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 9,
+  "fields": {
+    "color": 9,
+    "model": 11,
+    "quantity": 2,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 10,
+  "fields": {
+    "color": 8,
+    "model": 10,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 11,
+  "fields": {
+    "color": 8,
+    "model": 5,
+    "quantity": 10,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 12,
+  "fields": {
+    "color": 10,
+    "model": 3,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 13,
+  "fields": {
+    "color": 12,
+    "model": 3,
+    "quantity": 4,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 14,
+  "fields": {
+    "color": 15,
+    "model": 12,
+    "quantity": 2,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 15,
+  "fields": {
+    "color": 10,
+    "model": 12,
+    "quantity": 3,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 16,
+  "fields": {
+    "color": 13,
+    "model": 11,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 17,
+  "fields": {
+    "color": 10,
+    "model": 9,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 18,
+  "fields": {
+    "color": 10,
+    "model": 6,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "color": 13,
+    "model": 4,
+    "quantity": 1,
+    "timestamp": "2022-10-10"
+  }
+}
+]
